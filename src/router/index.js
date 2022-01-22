@@ -19,26 +19,39 @@ const routes = [{
         path: '/counter',
         name: 'counter',
         component: () =>
-            import ( /* webpackChunkName: "counter" */ '../views/Counter.vue')
+            import ( /* webpackChunkName: "Counter" */ '../views/Counter.vue')
     },
     {
         path: '/users',
         name: 'users',
         component: () =>
-            import ( /* webpackChunkName: "users" */ '../views/Users.vue')
+            import ( /* webpackChunkName: "Users" */ '../views/Users.vue')
     },
     {
         path: '/pokemon-search',
         name: 'pokemon-search',
         component: () =>
-            import ( /* webpackChunkName: "pokemon-search" */ '../views/SearchPokemon.vue')
+            import ( /* webpackChunkName: "Pokemon-Search" */ '../views/SearchPokemon.vue')
     },
     {
         path: '/pokemon/:id',
         name: 'pokemon-id',
         component: () =>
-            import ( /* webpackChunkName: "pokemon" */ '../views/Pokemon.vue')
+            import ( /* webpackChunkName: "Pokemon" */ '../views/Pokemon.vue')
+    },
+    {
+        path: '/todo',
+        name: 'todo',
+        component: () =>
+            import ( /* webpackChunkName: "Todo" */ '../views/TodoVuex.vue')
+    },
+    {
+        path: '/slots',
+        name: 'slots',
+        component: () =>
+            import ( /* webpackChunkName: "Slots" */ '../views/CustomSlots.vue')
     }
+
 ]
 
 const router = createRouter({
